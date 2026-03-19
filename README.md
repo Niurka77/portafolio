@@ -1,37 +1,103 @@
 # 💼 Portafolio Profesional - Niurka Guevara
 
-[![Live Demo](https://img.shields.io/badge/demo-online-00f5ff?style=for-the-badge&logo=githubpages&logoColor=white)](https://niurka77.github.io/portafolio/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-7c3aed?style=for-the-badge)](LICENSE)
+<div align="center">
 
-![Vista Previa del Portafolio](./niurka77.github.io_portafolio_.png)
+[![Demo](https://img.shields.io/badge/🚀_Ver_Portafolio-00f5ff?style=for-the-badge\&logo=githubpages\&logoColor=white)](https://niurka77.github.io/portafolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-Niurka77-7c3aed?style=for-the-badge\&logo=github)](https://github.com/Niurka77)
+[![License](https://img.shields.io/badge/License-MIT-9333ea?style=for-the-badge)]
 
-Bienvenido al repositorio de mi portafolio web profesional. Este proyecto es una vitrina interactiva de mi trabajo como **Ingeniera de Software con IA**, especializada en el sector **PropTech**. Aquí muestro no solo mi experiencia y proyectos, sino también la calidad de código y diseño que puedo ofrecer.
+<img src="./niurka77.github.io_portafolio_.png" width="800"/>
 
-## ✨ Características
+</div>
 
-*   **Diseño Moderno y Oscuro:** Interfaz elegante con modo oscuro y una paleta de colores neón (cyan y morado) que refleja una identidad tecnológica.
-*   **Totalmente Responsive:** Optimizado para verse perfectamente en dispositivos móviles, tablets y escritorio.
-*   **Animaciones y Efectos Sofisticados:** Uso de `glassmorphism`, efectos hover en tarjetas, cursor personalizado y animaciones suaves para una experiencia de usuario premium.
-*   **Galerías Interactivas:** Cada proyecto cuenta con un slider de imágenes y un lightbox para visualizar los detalles.
-*   **Formulario de Contacto Funcional:** Integración con FormSubmit para recibir mensajes directamente en mi correo sin necesidad de un backend propio.
-*   **Optimización SEO:** Estructura semántica y metaetiquetas para un mejor posicionamiento en buscadores.
+---
 
-## 🛠️ Tecnologías Utilizadas
+## 👩‍💻 Sobre mí
 
-*   **Frontend:**
-    *   HTML5 Semántico
-    *   [Tailwind CSS](https://tailwindcss.com/) - Para el diseño y estilos utilitarios.
-    *   JavaScript (Vanilla) - Para toda la lógica e interactividad.
-*   **Herramientas y Librerías:**
-    *   [Font Awesome](https://fontawesome.com/) - Íconos vectoriales.
-    *   Google Fonts (Inter) - Tipografía principal.
-*   **Despliegue:**
-    *   [GitHub Pages](https://pages.github.com/) - Hosting gratuito y directo desde el repositorio.
+Soy **Ingeniera de Software con enfoque en Inteligencia Artificial**, apasionada por el desarrollo de soluciones tecnológicas modernas en el sector **PropTech**.
 
-## 🚀 Proyectos Destacados en el Portafolio
+Me enfoco en crear aplicaciones **funcionales, escalables y visualmente atractivas**, combinando diseño moderno con lógica sólida.
 
-1.  **Ecosistema Inmobiliario T&F:** Plataforma PropTech con dashboards y app para asesores.
-2.  **H&C Ferromateriales:** ERP de gestión de inventarios para el sector ferretero.
-3.  **Mundo Virtual Interactivo:** Videojuego 3D desarrollado con JavaScript y Three.js.
+---
+
+## ✨ Características del Portafolio
+
+* 🌙 **Diseño oscuro moderno** con estilo neón (cyan + morado)
+* 📱 **Responsive total** (mobile, tablet, desktop)
+* 🎨 **Animaciones avanzadas** (glassmorphism, hover effects, transiciones suaves)
+* 🖼️ **Galerías interactivas** con slider + lightbox
+* 📩 **Formulario funcional** sin backend (FormSubmit)
+* 🔍 **Optimización SEO**
+
+---
+
+## 🛠️ Tecnologías
+
+<div align="center">
+
+![HTML](https://img.shields.io/badge/HTML5-0f172a?style=for-the-badge\&logo=html5)
+![CSS](https://img.shields.io/badge/TailwindCSS-0f172a?style=for-the-badge\&logo=tailwindcss)
+![JS](https://img.shields.io/badge/JavaScript-0f172a?style=for-the-badge\&logo=javascript)
+![FontAwesome](https://img.shields.io/badge/FontAwesome-0f172a?style=for-the-badge\&logo=fontawesome)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-0f172a?style=for-the-badge\&logo=github)
+
+</div>
+
+---
+
+## 🚀 Proyectos Destacados
+
+### 🏢 Ecosistema Inmobiliario T&F
+
+Plataforma PropTech con dashboards y app para asesores e inversionistas.
+
+### 🛠️ H&C Ferromateriales
+
+Sistema ERP para control de inventario, ventas y gestión comercial.
+
+### 🎮 Mundo Virtual Interactivo
+
+Videojuego 3D desarrollado con JavaScript y Three.js.
+
+---
 
 ## 📂 Estructura del Proyecto
+
+```bash
+portafolio/
+├── index.html
+├── logo.ico
+├── *.png
+└── README.md
+```
+
+---
+
+## ⚙️ Uso Local
+
+```bash
+git clone https://github.com/niurka77/portafolio.git
+cd portafolio
+```
+
+Abre `index.html` en tu navegador 🚀
+
+---
+
+## 📬 Contacto
+
+<div align="center">
+
+📧 **Correo:** [maritzaguevaramarrujo@gmail.com](mailto:maritzaguevaramarrujo@gmail.com)
+📱 **WhatsApp:** +51 906 877 812
+💼 **LinkedIn:** Niurka Maritza Guevara Marrujo
+
+</div>
+
+---
+
+## ⭐ Extra
+
+Si te gusta este proyecto, ¡dale una estrella ⭐ en GitHub!
+
+</div>
