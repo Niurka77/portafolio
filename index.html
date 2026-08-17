@@ -725,7 +725,7 @@ function makeDraggable(el, bar, id) {
 
 /* ---------- Galerías proyectos ---------- */
 function buildProjGals() {
-  const init = { tf:'gal-tf', hc:'gal-hc', game:'gal-game', kiva:'gal-kiva', donk:'gal-donk', mecho:'gal-mecho' };
+  const init = { tf:'gal-tf', hc:'gal-hc', game:'gal-game', kiva:'gal-kiva', donk:'gal-donk', mecho:'gal-mecho', nova:'gal-nova', myp:'gal-myp' };
   Object.keys(init).forEach(k => {
     const el = document.getElementById(init[k]);
     if (!el || el.dataset.done) return;
@@ -954,7 +954,9 @@ const GALERIES = {
   game:  ['Captura de pantalla 2026-03-12 152047.png','Captura de pantalla 2026-03-12 152246.png','Captura de pantalla 2026-03-12 152340.png','Captura de pantalla 2026-03-12 152411.png','Captura de pantalla 2026-03-12 152519.png','Captura de pantalla 2026-03-12 152129.png'],
   kiva:  ['kivastudio_1.png','kivastudio_2.png'],
   donk:  ['donkarl_1.png','donkarl_2.png'],
-  mecho: ['mecho_1.png','mecho_2.png']
+  mecho: ['mecho_1.png','mecho_2.png'],
+  nova:  ['nova_1.png','nova_2.png','nova_3.png'],
+  myp:   ['myproyect_1.png']
 };
 let lightboxStack = { imgs:[], idx:0 };
 
@@ -1050,6 +1052,32 @@ WIN_TMPL.projects = `
     <div class="acts">
       <a class="btn int" href="https://mecho-two.vercel.app/" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-globe"/></svg></span> Ver app web</a>
       <a class="btn ghost" href="https://github.com/Niurka77/mecho" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-github"/></svg></span> Código</a>
+    </div>
+  </div>
+
+  <div class="proj">
+    <div class="proj-head"><h3><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-db"/></svg></span> Nova Salud — POS de botica</h3><span class="lbl" style="background:var(--mint)">POS</span></div>
+    <p class="desc">Sistema de gestión de inventario y ventas para la botica Nova Salud: dashboard, alertas de bajo stock, reportes y acceso por roles.</p>
+    <div class="tags" style="padding:0 16px 10px">
+      <span class="tag s">React</span><span class="tag l">TypeScript</span><span class="tag p">Tailwind</span><span class="tag m">shadcn/ui</span>
+    </div>
+    <div class="gal-wrap"><div class="gal" id="gal-nova"></div></div>
+    <div class="acts">
+      <a class="btn primary" href="https://github.com/Niurka77/nova-salud-pos-system" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-github"/></svg></span> Ver código</a>
+      <a class="btn ghost" href="#" onclick="event.preventDefault();openProjGallery('nova')"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-image"/></svg></span> Ver pantallas</a>
+    </div>
+  </div>
+
+  <div class="proj">
+    <div class="proj-head"><h3><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-code"/></svg></span> Blog personal — React</h3><span class="lbl" style="background:var(--lilac)">REACT</span></div>
+    <p class="desc">Proyecto web en React con router y páginas de inicio y blog, estilo moderno y ligero.</p>
+    <div class="tags" style="padding:0 16px 10px">
+      <span class="tag s">React</span><span class="tag l">Vite</span><span class="tag m">JavaScript</span>
+    </div>
+    <div class="gal-wrap"><div class="gal" id="gal-myp"></div></div>
+    <div class="acts">
+      <a class="btn primary" href="https://github.com/Niurka77/my-proyect" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-github"/></svg></span> Ver código</a>
+      <a class="btn ghost" href="#" onclick="event.preventDefault();openProjGallery('myp')"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-image"/></svg></span> Ver pantalla</a>
     </div>
   </div>
 
