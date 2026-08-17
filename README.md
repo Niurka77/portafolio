@@ -59,6 +59,11 @@ Sistema ERP para control de inventario, ventas y gestión comercial.
 
 Videojuego 3D desarrollado con JavaScript y Three.js.
 
+### 🐦 Bird Branches
+
+Relajante juego de rompecabezas donde ordenas pájaros por colores hasta completar las ramas del bosque.
+**Juega gratis:** [bird-branches.vercel.app](https://bird-branches.vercel.app/)
+
 ---
 
 ## 📂 Estructura del Proyecto
@@ -68,6 +73,13 @@ portafolio/
 ├── index.html
 ├── logo.ico
 ├── *.png
+├── assets/
+│   ├── data/certs.js
+│   └── img/foto-niurka.jpg
+├── documentos/
+│   ├── CV_MaritzaGuevara Marrujo.docx
+│   ├── constancias de trabajo.pdf
+│   └── certificado de ingles.pdf
 └── README.md
 ```
 
