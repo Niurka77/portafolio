@@ -1,7 +1,8 @@
 /* ============================================================
    CERTIFICADOS — única fuente de verdad.
-   IDs reales extraídos de la carpeta pública de Drive:
-   https://drive.google.com/drive/folders/1pgQy0ecmloJtC-G5eCAu7Q0mPS3uZ9oQ
+   IDs reales extraídos de las carpetas públicas de Drive:
+   - Principal: https://drive.google.com/drive/folders/1pgQy0ecmloJtC-G5eCAu7Q0mPS3uZ9oQ
+   - Beca 18 (PRONABEC): https://drive.google.com/drive/folders/1WWw_Y-RliBhbYQ5ysLkqq8boQB1fTTFe
    ============================================================ */
 (function () {
   'use strict';
@@ -36,6 +37,29 @@
       { ico: 'LT', name: 'Learner Transcript PDF (2)',  desc: 'Historial académico oficial (copia).',                meta: '2023 · PRONABEC',   id: '1gRR7i5o7hDc3XHw-89NrXQ4SOI4luxWJ' },
       { ico: 'XL', name: 'Learner Transcript XLSX',     desc: 'Historial académico oficial (Excel).',                meta: '2023 · PRONABEC',   id: '1OH_nzKT5qWMuZCAYnjIeBPZPxsg5stmY' },
       { ico: 'NM', name: 'NIURKA MARITZA GUEVARA',      desc: 'Certificado general a nombre de la Nación.',          meta: '2025 · SENATI',     id: '1gAT5Jmi73jGDA9nqe7t-WdjUW25LSQ56' }
+    ],
+
+    // Beca 18 · PRONABEC (habilidades blandas y empleabilidad)
+    soft: [
+      { ico: 'B18', name: 'Construyendo mi bienestar I',          desc: 'Curso de bienestar de la plataforma Beca 18.',    meta: 'PRONABEC', id: '1i_BOw-pABmdRddNRlPaqwEB_XTHm67Kt' },
+      { ico: 'B18', name: 'Construyendo mi bienestar II',         desc: 'Curso de bienestar de la plataforma Beca 18.',    meta: 'PRONABEC', id: '1nsFHVm6zNGmBuiFqv8rWlq1CJEK178JM' },
+      { ico: 'B18', name: 'Construyendo mi bienestar III',        desc: 'Curso de bienestar de la plataforma Beca 18.',    meta: 'PRONABEC', id: '1Jx61qiWe24GrFzr04zWxNj9aLt6-8h68' },
+      { ico: 'B18', name: 'Cómo adaptarme a un nuevo reto',       desc: 'Herramientas para asumir nuevos desafíos.',       meta: 'PRONABEC', id: '1fyxtbLBHmriljt_t6W3X7MA90JHhPEIh' },
+      { ico: 'B18', name: 'Comunicación asertiva',                desc: 'Comunicación efectiva en equipo.',               meta: 'PRONABEC', id: '1TY9UiheYwfUwYguNAzcm8xYQzcU8a3VJ' },
+      { ico: 'B18', name: 'Empatía',                              desc: 'Inteligencia interpersonal y empatía.',         meta: 'PRONABEC', id: '1eJjauk8idXltErtRY3apTo8NuWzmo9Ji' },
+      { ico: 'B18', name: 'Estrategias y técnicas de aprendizaje',desc: 'Métodos de estudio y aprendizaje efectivo.',     meta: 'PRONABEC', id: '1LuAbDFtn5fsMSIdI0SQBP_xE3mN8ihA6' },
+      { ico: 'B18', name: 'Finanzas personales para la vida',     desc: 'Gestión financiera personal.',                  meta: 'PRONABEC', id: '17kGqrd2vqI61d50R3y9uXTrAt1nAWL2p' },
+      { ico: 'B18', name: 'Motivación',                           desc: 'Motivación y compromiso personal.',             meta: 'PRONABEC', id: '1WMn3GFZahRp5hMl14h3Dl65q2_834pLe' },
+      { ico: 'B18', name: 'Proyecto de vida',                     desc: 'Planificación del proyecto profesional.',       meta: 'PRONABEC', id: '1LSNgQcIsYXzvxjntk5u_5AH3-pCjhgff' },
+      { ico: 'B18', name: 'Regulando mis emociones',              desc: 'Gestión emocional y autocontrol.',              meta: 'PRONABEC', id: '1FfSp2Xkn37l-OqxmJK48Ptzd3uCdGxQV' },
+      { ico: 'B18', name: 'Resolución de problemas',              desc: 'Pensamiento crítico y solución de problemas.',  meta: 'PRONABEC', id: '1_JDiJl3KQ28IJ1qKCvpUe1Fbzr5uO1RH' },
+      { ico: 'B18', name: 'Trabajo en equipo',                    desc: 'Colaboración y trabajo en equipo.',             meta: 'PRONABEC', id: '1nd5EQGKKiMT00RcIBomjCLbeHgVQwQDg' },
+      { ico: 'B18', name: 'Desarrollo comunitario: ética y valores', desc: 'Ética, valores y compromiso comunitario.',    meta: 'PRONABEC', id: '1OG76DhSzKoNCjZZ3HWDkGUazPFNDpDVe' },
+      { ico: 'B18', name: 'El compromiso nos une',                desc: 'Compromiso de servicio al Perú.',               meta: 'PRONABEC', id: '1xbQR-OU0kE_-yOXhAwov_7Gp0kigdweQ' },
+      { ico: 'B18', name: 'Empléate',                             desc: 'Proyecto profesional, CV de alto impacto y entrevista.', meta: 'PRONABEC', id: '12HYPQ-Lh_tTDOjUoRz5AWKZTiWFyMCT3' },
+      { ico: 'B18', name: 'Emprendimiento',                       desc: 'Ideas emprendedoras e innovación.',             meta: 'PRONABEC', id: '1-hnzafNZWUrMoKKmjVudZCsErqO5Gh7-' },
+      { ico: 'B18', name: 'Fortalece tu talento',                 desc: 'Comunicación efectiva, liderazgo e innovación.', meta: 'PRONABEC', id: '1c_0JGhqDtpjMYDZSLqeaXbX3NfS_l0_-' },
+      { ico: 'B18', name: 'Orientación para las prácticas preprofesionales', desc: 'Preparación para la culminación exitosa.', meta: 'PRONABEC', id: '1DSif_xVOH38NHwfOW4azD3EY0oGWgy6K' }
     ]
   };
 
