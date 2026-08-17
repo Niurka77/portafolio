@@ -94,6 +94,9 @@
   }
   .d-icon:hover { background:rgba(60,120,180,.35); border-color:rgba(255,255,255,.6); }
   .d-icon:active { transform:scale(.96); }
+  .d-icon, .btn, .win-btns button, .task-b, #start-btn, .chip, .cert, .sm-item {
+    touch-action:manipulation; -webkit-tap-highlight-color:transparent;
+  }
   .d-icon .ico {
     width:52px; height:48px; display:flex; align-items:center; justify-content:center;
     font-size:30px; background:linear-gradient(180deg,#fff,#E9EEF4);
@@ -343,11 +346,18 @@
 
   /* Modal friendly */
   @media (max-width:700px) {
-    #icons { flex-direction:row; flex-wrap:wrap; width:100%; height:auto; justify-content:center; }
-    #desktop { overflow:auto; }
+    #icons { flex-direction:row; flex-wrap:wrap; width:100%; height:auto; justify-content:center; gap:10px 6px; padding:12px 6px; }
+    #icons .d-icon { width:72px; }
+    #desktop { overflow:auto; -webkit-overflow-scrolling:touch; }
     #windows { position:fixed; }
     .win { max-width:100vw; }
     #hint { display:none; }
+    #taskbar { height:auto; min-height:44px; flex-wrap:nowrap; }
+    #clock { display:none; }
+    #start-menu { width:min(300px, calc(100vw - 16px)); }
+    .proj .gal img { height:150px; }
+    .win-body { padding:14px; }
+    .h1 { font-size:19px; }
   }
 </style>
 </head>
@@ -745,9 +755,21 @@ function boot() {
 function renderDesktop() {
   const iconsEl = document.getElementById('icons');
   iconsEl.innerHTML = ICONS.map(ic =>
-    `<div class="d-icon" id="ic-${ic.id}" title="${ic.label}" ondblclick="openWin('${ic.id}')"
-        onclick="selectIcon('${ic.id}')"><div class="ico">${svgIc(ic.ico)}</div><span>${ic.label}</span></div>`
+    `<div class="d-icon" id="ic-${ic.id}" title="${ic.label}"><div class="ico">${svgIc(ic.ico)}</div><span>${ic.label}</span></div>`
   ).join('');
+  /* Apertura con UN solo toque/clic (también evita abrir al hacer scroll en celular) */
+  document.querySelectorAll('.d-icon').forEach(el => {
+    let moved = false;
+    el.addEventListener('pointerdown', () => { moved = false; });
+    el.addEventListener('pointermove', () => { moved = true; });
+    el.addEventListener('click', (e) => {
+      if (moved) { e.preventDefault(); return; }
+      e.stopPropagation();
+      const id = el.id.replace('ic-', '');
+      selectIcon(id);
+      openWin(id);
+    });
+  });
   buildCerts();
   setTimeout(() => toast(svgIc('folder') + ' Escritorio cargado · bienvenida a mi mundo!'), 900);
 }
@@ -795,8 +817,9 @@ function openWin(id) {
 
   // tamaño responsive
   const vw = window.innerWidth, vh = window.innerHeight;
-  if (vw < 900) { el.style.width = (vw - 20) + 'px'; el.style.left = '10px'; }
-  if (vh < 640) { el.style.height = Math.min(cfg.h, vh - 120) + 'px'; el.style.top = '20px'; }
+  if (vw < 900) { el.style.width = (vw - 16) + 'px'; el.style.left = '8px'; }
+  if (vh < 760 || vw < 700) { el.style.height = Math.min(cfg.h, vh - 96) + 'px'; el.style.top = '6px'; }
+  else if (vh < 900) { el.style.height = Math.min(cfg.h, vh - 110) + 'px'; el.style.top = '20px'; }
 
   document.getElementById('windows').appendChild(el);
   DESK.wins[id] = el;
