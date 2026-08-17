@@ -22,12 +22,15 @@ Me enfoco en crear aplicaciones **funcionales, escalables y visualmente atractiv
 
 ## ✨ Características del Portafolio
 
-* 🌙 **Diseño oscuro moderno** con estilo neón (cyan + morado)
-* 📱 **Responsive total** (mobile, tablet, desktop)
-* 🎨 **Animaciones avanzadas** (glassmorphism, hover effects, transiciones suaves)
-* 🖼️ **Galerías interactivas** con slider + lightbox
-* 📩 **Formulario funcional** sin backend (FormSubmit)
-* 🔍 **Optimización SEO**
+* 🪟 **Niurka OS**: portafolio interactivo estilo Windows antiguo (ventanas arrastrables, minimizables, apilables)
+* 📁 **Escritorio explorable** con iconos que abren ventanas y menú Inicio
+* 🎮 **Videojuego Bird Branches** jugable directamente desde una ventana
+* 🌈 **Paleta pastel** y diseño dinámico con personalidad
+* 🖼️ **Galerías** de proyectos con lightbox y touch support
+* 📜 **23 certificados verificables** enlazados a una carpeta pública de Google Drive
+* 📄 **Documentos descargables**: CV, constancias de trabajo y certificado de inglés
+* 📩 **Formulario de contacto** con apertura directa por email
+* 📱 **Responsive total**
 
 ---
 
