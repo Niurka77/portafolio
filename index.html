@@ -725,7 +725,7 @@ function makeDraggable(el, bar, id) {
 
 /* ---------- Galerías proyectos ---------- */
 function buildProjGals() {
-  const init = { tf:'gal-tf', hc:'gal-hc', game:'gal-game', kiva:'gal-kiva', donk:'gal-donk', mecho:'gal-mecho', nova:'gal-nova', myp:'gal-myp' };
+  const init = { tf:'gal-tf', hc:'gal-hc', game:'gal-game', kiva:'gal-kiva', donk:'gal-donk', mecho:'gal-mecho', nova:'gal-nova', myp:'gal-myp', cron:'gal-cron' };
   Object.keys(init).forEach(k => {
     const el = document.getElementById(init[k]);
     if (!el || el.dataset.done) return;
@@ -956,7 +956,8 @@ const GALERIES = {
   donk:  ['donkarl_1.png','donkarl_2.png'],
   mecho: ['mecho_1.png','mecho_2.png'],
   nova:  ['nova_1.png','nova_2.png','nova_3.png'],
-  myp:   ['myproyect_1.png']
+  myp:   ['myproyect_1.png'],
+  cron:  ['cronicas_1.png','cronicas_2.png']
 };
 let lightboxStack = { imgs:[], idx:0 };
 
@@ -1130,6 +1131,20 @@ WIN_TMPL.projects = `
       <a class="btn primary" href="https://bird-branches.vercel.app/" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-external"/></svg></span> Jugar en otra pestaña</a>
     </div>
   </div>
+
+  <div class="proj" style="border-color:#e8d5a8;box-shadow:0 3px 0 #e8d5a8">
+    <div class="proj-head"><h3><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-game"/></svg></span> Crónicas del Castillo</h3><span class="lbl" style="background:var(--amber)">JUEGO</span></div>
+    <p class="desc">Dark fantasy de combate por ritmo en HTML5 Canvas puro. Sube un castillo maldito, pelea al compás de la música, bloquea, enrágate y derrota al jefe final.</p>
+    <div class="tags" style="padding:0 16px 10px">
+      <span class="tag s">JavaScript</span><span class="tag l">Canvas</span><span class="tag m">Web Audio</span><span class="tag a">Ritmo</span>
+    </div>
+    <div class="gal-wrap"><div class="gal" id="gal-cron"></div></div>
+    <div class="acts">
+      <a class="btn int" style="background:linear-gradient(120deg,#c9a24b,#e8d5a8);color:#2b2212" href="https://cronicas-del-castillo.vercel.app/" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-game"/></svg></span> Jugar gratis</a>
+      <a class="btn ghost" href="https://github.com/Niurka77/cronicas-del-castillo" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-github"/></svg></span> Código</a>
+      <a class="btn ghost" href="#" onclick="event.preventDefault();openProjGallery('cron')"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-image"/></svg></span> Ver pantallas</a>
+    </div>
+  </div>
 `;
 
 WIN_TMPL.games = `
@@ -1142,6 +1157,7 @@ WIN_TMPL.games = `
     <div class="acts" style="margin-top:10px">
       <a class="btn ghost" href="https://niurka77.github.io/roblox/" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-star"/></svg></span> Mundo Virtual 3D</a>
       <a class="btn int" href="https://bird-branches.vercel.app/" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-external"/></svg></span> Abrir completo</a>
+      <a class="btn int" style="background:linear-gradient(120deg,#c9a24b,#e8d5a8);color:#2b2212" href="https://cronicas-del-castillo.vercel.app/" target="_blank"><span class="iw"><svg viewBox="0 0 24 24"><use href="#ic-game"/></svg></span> Crónicas del Castillo</a>
     </div>
   </div>
 `;

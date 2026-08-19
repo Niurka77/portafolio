@@ -25,6 +25,7 @@ Me enfoco en crear aplicaciones **funcionales, escalables y visualmente atractiv
 * 🪟 **Niurka OS**: portafolio interactivo estilo Windows antiguo (ventanas arrastrables, minimizables, apilables)
 * 📁 **Escritorio explorable** con iconos que abren ventanas y menú Inicio
 * 🎮 **Videojuego Bird Branches** jugable directamente desde una ventana
+* 🏰 **Crónicas del Castillo** jugable online: dark fantasy de combate por ritmo en Canvas puro
 * 🌈 **Paleta pastel** y diseño dinámico con personalidad
 * 🖼️ **Galerías** de proyectos con lightbox y touch support
 * 📜 **23 certificados verificables** enlazados a una carpeta pública de Google Drive
@@ -66,6 +67,12 @@ Videojuego 3D desarrollado con JavaScript y Three.js.
 
 Relajante juego de rompecabezas donde ordenas pájaros por colores hasta completar las ramas del bosque.
 **Juega gratis:** [bird-branches.vercel.app](https://bird-branches.vercel.app/)
+
+### 🏰 Crónicas del Castillo
+
+Juego **dark fantasy de combate por ritmo** en HTML5 Canvas puro: sube un castillo maldito, pelea al compás de la música, bloquea, enrágate y derrota al jefe final.
+**Juega gratis:** [cronicas-del-castillo.vercel.app](https://cronicas-del-castillo.vercel.app/)
+**Código:** [github.com/Niurka77/cronicas-del-castillo](https://github.com/Niurka77/cronicas-del-castillo)
 
 ---
 
